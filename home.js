@@ -9,5 +9,27 @@ console.log(addMoneyInput);
 const pinNumberInput = document.getElementById('input-pin-number').value;
 console.log(pinNumberInput);
 
+// verify pin number
+if(pinNumberInput === '1234'){
+    console.log('adding money to your account');
+    const balance = document.getElementById('account-balance').innerText;
+    console.log(balance);
+
+    //  addMoneyInput with balance
+    const addMoneyNumber = parseFloat(addMoneyInput);
+    const balanceNumber = parseFloat(balance);
+    const newBalance = addMoneyNumber + balanceNumber;
+    console.log(newBalance);
+    
+
+    // update the balance in the UI/DOM
+    document.getElementById('account-balance').innerText = newBalance;
+    
+}
+else{
+    alert('Failed to add money! please try again.')
+
+}
+
 
 })

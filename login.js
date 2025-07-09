@@ -11,10 +11,10 @@ document.getElementById('btn-login').addEventListener('click', function(event){
     const pinNumber = document.getElementById('pin-number').value;
     console.log(pinNumber);
     
-})
- 
 
-if(phoneNumber === '5' && pinNumber=== '1234'){
+    //---------
+    
+    if(phoneNumber === '5' && pinNumber=== '1234'){
     console.log('you are logged in');
     
      window.location.href = 'home.html'
@@ -23,3 +23,7 @@ if(phoneNumber === '5' && pinNumber=== '1234'){
 else{
     alert('Wrong phone number or Pin');
 }
+
+})
+ 
+
